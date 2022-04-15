@@ -4,7 +4,7 @@ from core.module import Person, Wizard, HealthPotion
 first_user = Person("Hero")
 second_user = Wizard("Wizard")
 
-while first_user.is_dead() == False and second_user.is_dead() == False:
+while first_user.is_dead(first_user) == False and second_user.is_dead(second_user) == False:
     random = np.random.randint(2)
     
     if random == 1:
